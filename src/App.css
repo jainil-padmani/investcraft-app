@@ -1,0 +1,81 @@
+/* Container for app with improved spacing and padding */
+.app-container {
+  text-align: center;
+  padding: 1.5rem; /* Added padding for better spacing */
+  background: linear-gradient(to bottom, #282c34, #4b4f56); /* Gradient background for depth */
+  color: white; /* Ensures text is visible */
+}
+
+/* App logo with animation */
+.app-logo {
+  height: 40vmin; /* Scales well across devices */
+  pointer-events: none; /* Prevents unwanted interactions */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .app-logo {
+    animation: app-logo-spin infinite 20s linear; /* Smooth rotation */
+  }
+}
+
+@keyframes app-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Header with visual hierarchy and proper alignment */
+.app-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem; /* Ensures readability */
+  color: white; /* High contrast for readability */
+  padding: 2rem; /* Consistent padding */
+  border-bottom: 2px solid #61dafb; /* Adds a subtle divider */
+}
+
+/* Links with hover effect and consistent transitions */
+.app-link {
+  color: #61dafb; /* Distinctive link color */
+  text-decoration: none; /* No underlining for a cleaner look */
+}
+
+.app-link:hover {
+  color: #4eaecb; /* Hover color for interaction feedback */
+  transition: color 0.3s; /* Smooth transition on hover */
+}
+
+/* Primary button style with enhanced interactivity */
+.btn-primary {
+  background-color: #2563eb; /* Blue background */
+  color: white; /* White text */
+  padding: 0.75rem 1.5rem; /* Padding for buttons */
+  border-radius: 0.5rem; /* Rounded corners */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8; /* Darker blue on hover */
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Card style with hover effect and transitions */
+.card {
+  background-color: white; /* White background */
+  padding: 1.5rem; /* Padding for the card */
+  border-radius: 0.5rem; /* Rounded corners */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Initial shadow */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
